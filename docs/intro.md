@@ -29,19 +29,24 @@ Spring Boot 项目可以通过继承spring-boot-starter-parent 来获得一些�
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.25</version>
+    </dependency>
 </dependencies>
 ```
 
+## mysql
+mac m1芯片，安装好mysql之后，配置好bash之后，登录不了
+报错 `ERROR 2002 (HY000): Can‘t connect to local MySQL server through socket ‘/tmp/mysql.sock‘ (2)`
+```shell
+# 第一步：找到mysql的安装目录，我的是：/usr/local/mysql，不用去mysql底下的bin目录
+# 第二步：执行 sudo ./support-files/mysql.server start 
+# 完成以上两步，问题已解决
+```
+
 ## more urls
-https://www.bilibili.com/video/BV1PE411i7CV?from=search&seid=1700333346121863110&spm_id_from=333.337.0.0
-
-https://www.roncoo.com/course/view/e4189c9db6474745b5e578983cddd112
-
-https://www.roncoo.com/course/view/c99516ea604d4053908c1768d6deee3d#boxTwo
-
-https://github.com/roncoo/roncoo-jui-springboo
-
-https://blog.csdn.net/u012152619/article/details/51485152
-
-https://blog.csdn.net/u012152619
+- [spring boot 系列博客](https://www.cnblogs.com/ityouknow/p/5662753.html)
+- [spring boot 系列视频](https://www.bilibili.com/video/BV1PE411i7CV)
 
